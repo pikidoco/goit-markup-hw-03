@@ -22,10 +22,21 @@
         font-family: var(--text2-font-family);
         background-color:var(--background-color-white);
         font-style: normal;
+        width: 100vw;
         }
+        * {
+        box-sizing: border-box;}
+
         ul {list-style-type: none;}
         a {text-decoration: none;}
         button{font-family: inherit;}
+    
+        .global-header .global-footer .our-team {
+            width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
 
     /*title section*/
 
@@ -36,13 +47,30 @@
         line-height: 60px;
         letter-spacing: 0.06em;
         color:var(--background-color-white);
+        padding-top: 199px;
         }
-    .title-section {
+
+    .title-section {text-align: center;
+        height: 600px;
+        top: 80px;
         background-color:var(--title-footer-background-color);
     }
     
+.global-header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    border: 1px solid #ECECEC;
+}
+
     /*logo*/
     
+    .logo-nav { 
+    padding-top: 24px;
+    }
+
     .first-word {
         font-family: var(--text1-font-family);
         color: #2196F3;
@@ -89,7 +117,8 @@
         top: 32px;
         left: 453px;
    }
-
+   .menu-nav li {display: inline-block;
+    justify-content: space-around;}
    .nav-link {
         font-family: var(--text2-font-family);
         font-weight: 500;
@@ -117,6 +146,18 @@
 
     /*strong-points*/
 
+    .strong-points-container {
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        padding-top: 94px;
+        gap: 30px;
+        margin-left: 215px;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .strong-points h3 {
         font-family: var(--text2-font-family);
         font-weight: 700;
@@ -143,11 +184,42 @@
         color: var(--subtitle-color);
         line-height: 1.337em;
     }
+
+        /* what-we-do*/
+        .what-we-do {padding-top: 94px;}
+        .what-we-do h2 {text-align: center;}
+        .what-we-do-container {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        margin-left:215px;
+        gap: 30px;
+        padding-left: 0;
+    }
+    
     /*our-team*/
 
-    .our-team {background-color: var(--button-background-color);}
+    .our-team {background-color: var(--button-background-color);
+    padding-top: 94px;}
+    .our-team h2 {display:flex; justify-content: center;}
 
-    .our-team h3 {
+    .team-comp {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-left:0 0 0 215px;
+        padding-left: 0;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .card { box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        background-color: var(--background-color-white);
+        border-radius:0px 0px 4px 4px;
+        height: 368px;
+      }
+    .our-team h3 {display: flex;
+        justify-content: center;
         font-family: var(--text2-font-family);
         font-weight: 500;
         font-size: 16px;
@@ -156,7 +228,7 @@
         line-height: 1.36em;
     }
 
-    .our-team span {
+    .our-team span {display: flex; justify-content: center;
         font-family: var(--text2-font-family);
         font-weight: 400;
         font-size: 16px;
@@ -185,6 +257,7 @@
     .title-section .button:hover {background-color: var(--title-button-hover-color);
     color: #FFFFFF;}
 
+
     .nav-product button {
         font-family: var(--text2-font-family);
         cursor: pointer;
@@ -206,6 +279,39 @@
         background-color: var(--text-hover-focus-color);}
    
         /*card section*/
+
+    .product-container {
+        width: 1200px;
+        margin: 0;
+        padding-top: 94px;
+    }
+    .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    .card-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 0;
+    }
+
+    .item {flex-basis: calc((100% - 60px) / 3);
+        border: 1px solid #EEE;
+        padding:0;
+        background-color:var(--background-color-white);
+    
+      }
+      
+      .item-footer {
+        display: flex;
+        flex-direction: column;
+        max-height: 110px;
+      }
 
     .card-section {
         background-color: var(--background-color-white);
@@ -232,6 +338,7 @@
         background-color:var(--title-footer-background-color);
         font-family: var(--text2-font-family);
         font-weight: 400;
+        height: 251px;
     }
 
     .global-footer a :hover,:focus {
